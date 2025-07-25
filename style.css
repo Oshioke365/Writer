@@ -1,0 +1,747 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family:  backout, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(217, 0, 112, 1),
+    rgba(110, 4, 140, 1)
+  
+  );
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-height: 12vh;
+  min-width: 99%;
+  z-index: 10;
+  background: #000;
+  border-bottom: 2px solid #0c2d48;
+  padding-right: 20px;
+}
+
+header .navigation .logo{
+  margin-left: 20px;
+}
+
+header .navigation .logo h1{
+  color: #fff;
+  font-size: 50px;
+  line-height: 38px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+ }
+ 
+header .navigation .humbarger .bar{
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #b1d4e0;
+ }
+
+header .navigation .menu-list li a {
+  color: #b1d4e0;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+}
+
+/* ====================
+  Intro Section
+=======================*/
+
+
+
+/* ====================
+  Responsive Section
+=======================*/
+
+/* Tablet desktop :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .navigation .menu-list {
+    width: 60%;
+  }
+
+  header .navigation .menu-list li a{
+    font-size: 1rem;
+  }
+
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+
+  header .navigation .menu-list {
+    position: absolute;
+    top: 12vh;
+    min-width: 100%;
+    background: rgba(15, 20, 35, 0.99);
+    text-align: center;
+    display: none;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+
+  }
+
+  header .navigation .menu-list li a:hover{
+    color: #b1d4e0;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+
+  header .navigation .humbarger{
+    display: block;
+  }
+
+  .intro-section .intro-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .intro-section .intro-content h6 {
+    font-size: 1.4rem;
+  }
+
+  .intro-section .intro-content .changing {
+    font-size: 1.5rem;
+  }
+
+  .intro-section .intro-content .header-btn a{
+    font-size: 1.25rem;
+  }
+
+}
+
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+
+  .intro-inner .intro-content h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .intro-inner .intro-content p {
+    margin-top: 10px;
+  }
+
+}
+    
+
+#home {
+  height: 100vh;
+  background: url(images/RAY\ BG.png) no-repeat center center/cover;
+  margin-top: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.one-sect {
+  max-width: 100%;
+  text-align: center;
+}
+
+.one-writeup {
+  text-align: center;
+}
+
+.one-writeup h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.line1,
+.line2,
+.line3 {
+  display: block;
+  font-size: 150px;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: rgb(243, 243, 243);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  line-height: 0.8; /* 👈 Add this line */
+
+}
+
+.line2 {
+  font-size: 130px;
+}
+
+.line3 {
+  font-size: 130px;
+}
+
+.home p {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiny-icon {
+  width: 3em;
+  height: auto;
+  margin-right: 10px;
+}
+
+.btn-outline {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 10px 30px;
+  border: 2px solid white;
+  position: relative;
+  transition: 0.5s;
+  margin-top: 29px;
+  display: inline-block;
+}
+
+.btn-outline::before,
+.btn-outline::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: 0.5s;
+}
+
+.btn-outline::before {
+  top: -10px;
+  left: -10px;
+  border-width: 2px 0 0 2px;
+}
+
+.btn-outline::after {
+  bottom: -10px;
+  right: -10px;
+  border-width: 0 2px 2px 0;
+}
+
+.btn-outline:hover::before,
+.btn-outline:hover::after {
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+}
+
+
+/*about section*/
+#about {
+  margin-top: 50px;
+  padding: 60px 20px;
+  
+}
+
+.sub-title {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* make both sides same height */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap; /* responsiveness on smaller screens */
+}
+
+.about-writeup {
+  flex: 1;
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;        /* vertical alignment */
+  justify-content: center;    /* horizontal alignment */
+  text-align: center;         /* centers the lines themselves */
+}
+
+
+.about-writeup h3 {
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 300px; /* smaller fixed width */
+  height: 300px; /* same as width for perfect circle */
+  border-radius: 50%; /* makes it a circle */
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+#portfolio {
+  padding: 50px 0;
+  background: url(images/PORT\ BG.png);
+  background-size: cover;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 140px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  margin-right: auto;
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* keeps it responsive */
+  margin: 50px auto;
+  width: fit-content;
+}
+
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* prevents stretching */
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.238), #fff);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.layer p {
+  font-size: 16px;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: linear-gradient(
+    to right,
+    rgba(217, 0, 112, 1),
+    rgba(110, 4, 140, 1),
+    rgba(40, 52, 164, 1)
+  );
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.btn-outline2 {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 10px 30px;
+  border: 2px solid white;
+  position: relative;
+  transition: 0.5s;
+  display: inline-block;
+  margin: 0 auto;
+  left: 0;
+}
+
+.btn-outline2::before,
+.btn-outline2::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: 0.5s;
+}
+
+.btn-outline2::before {
+  top: -10px;
+  left: -10px;
+  border-width: 2px 0 0 2px;
+}
+
+.btn-outline2::after {
+  bottom: -10px;
+  right: -10px;
+  border-width: 0 2px 2px 0;
+}
+
+.btn-outline2:hover::before,
+.btn-outline2:hover::after {
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+}
+
+
+
+/* Card Styling for Swiper */
+
+
+
+.reviewthing {
+  margin-top: 19px;
+  text-align: center;
+  font-weight: bolder;
+  color: #f0f0f0;
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+  overflow: hidden;
+  color: #f0f0f0;
+  margin-left: 30%;
+  
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.slide p {
+font-size: 20px;
+font-weight: bolder;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 0px; /* Move the left arrow further away */
+}
+
+.arrow.right {
+  right: 0px; /* Move the right arrow further away */
+}
+
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+#contact {
+  margin-top: 44px;
+  padding: 50px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form input {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-form textarea {
+  background-color: #fff;
+  color: #000;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.social-icon:hover {
+  background-color: rgba(217, 0, 112, 1);
+  color: #fff;
+}
+
+.social-icon i {
+  font-size: 1.5rem;
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 991px) {
+  .sub-title {
+    font-size: 60px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-writeup {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    font-size: 80px;
+  }
+
+  .line2,
+  .line3 {
+    font-size: 70px;
+  }
+
+  .home p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    font-size: 50px;
+  }
+
+  .line2,
+  .line3 {
+    font-size: 45px;
+  }
+
+  .about-writeup h3 {
+    font-size: 14px;
+  }
+
+  .about-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .btn-outline,
+  .btn-outline2 {
+    padding: 8px 20px;
+    font-size: 0.9em;
+  }
+
+  .work img {
+    height: 30vh;
+  }
+
+  .layer h3 {
+    font-size: 24px;
+  }
+
+  .layer p {
+    font-size: 14px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    margin-right: 0;
+  }
+
+  .social-icon {
+    padding: 10px;
+  }
+
+  .social-icon i {
+    font-size: 1.2rem;
+  }
+}
